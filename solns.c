@@ -59,7 +59,7 @@ int mode(int x[], int y)
 				//printf("count:%d\tcntmax:%d\t",count,cntmax);
 			}
 	}
-	printf("elem%d",elem);
+	//printf("elem%d",elem);
 	return elem;
 }
 
