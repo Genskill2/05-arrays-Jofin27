@@ -46,15 +46,20 @@ int mode(int x[], int y)
 	int cntmax=0, elem=0;
 	for(int i=0;i<y;i++)
 	{
-		int count;
+		int count=0;
 		for(int j=0;j<y;j++)
 		{
 			if(x[j]==x[i])
 				count++;
 		}
 		if(count>cntmax)
-			elem=x[i];
+			{
+				cntmax=count;
+				elem=x[i];
+				//printf("count:%d\tcntmax:%d\t",count,cntmax);
+			}
 	}
+	printf("elem%d",elem);
 	return elem;
 }
 
